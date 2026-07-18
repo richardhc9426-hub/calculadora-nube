@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: calculadora-nube
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
+    autoDeployTrigger: commit

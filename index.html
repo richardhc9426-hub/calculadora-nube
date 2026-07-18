@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calculadora web desplegada en la nube con Render">
+  <title>Calculadora en la nube</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="intro">
+      <span class="badge">Proyecto de computación en la nube</span>
+      <h1>Calculadora web</h1>
+      <p>
+        Aplicación estática desarrollada con HTML, CSS y JavaScript,
+        publicada mediante GitHub y Render.
+      </p>
+    </section>
+
+    <section class="calculator" aria-label="Calculadora">
+      <div class="calculator__top">
+        <div>
+          <p class="calculator__label">Resultado</p>
+          <output id="display" class="calculator__display" aria-live="polite">0</output>
+        </div>
+        <span class="status"><span class="status__dot"></span> En línea</span>
+      </div>
+
+      <div class="calculator__keys">
+        <button type="button" class="key key--secondary" data-action="clear">C</button>
+        <button type="button" class="key key--secondary" data-action="delete">⌫</button>
+        <button type="button" class="key key--secondary" data-value="%">%</button>
+        <button type="button" class="key key--operator" data-value="/">÷</button>
+
+        <button type="button" class="key" data-value="7">7</button>
+        <button type="button" class="key" data-value="8">8</button>
+        <button type="button" class="key" data-value="9">9</button>
+        <button type="button" class="key key--operator" data-value="*">×</button>
+
+        <button type="button" class="key" data-value="4">4</button>
+        <button type="button" class="key" data-value="5">5</button>
+        <button type="button" class="key" data-value="6">6</button>
+        <button type="button" class="key key--operator" data-value="-">−</button>
+
+        <button type="button" class="key" data-value="1">1</button>
+        <button type="button" class="key" data-value="2">2</button>
+        <button type="button" class="key" data-value="3">3</button>
+        <button type="button" class="key key--operator" data-value="+">+</button>
+
+        <button type="button" class="key key--zero" data-value="0">0</button>
+        <button type="button" class="key" data-value=".">.</button>
+        <button type="button" class="key key--equals" data-action="calculate">=</button>
+      </div>
+
+      <p id="message" class="calculator__message">
+        Seleccione los números y la operación que desea realizar.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Despliegue académico en la nube · GitHub + Render</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
